@@ -1,0 +1,7 @@
+We can use 2 way to get the String value from html
+
+scope : {
+        user:'=',
+        initialCollapsed : '@collapsed' =>  <user-info-card user="user" collapsed="true"> Name isn't match scope and view
+        collapsed : '@' =>  <user-info-card user="user" collapsed="true">. Name match exactly bw scope and view
+},

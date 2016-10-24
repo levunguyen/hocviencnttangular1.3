@@ -1,0 +1,1 @@
+When we have a duplicate code the same html,javascript, and functionalities or features in directive we shoud think about transaclude

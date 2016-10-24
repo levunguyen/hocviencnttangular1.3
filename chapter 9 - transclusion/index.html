@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+      
+ 
+    
+   
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script  src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="mainCtrl" class="container" style="padding-top:30px">
+    <h1>Questions</h1>
+    <my-question q="Where is a rebel base ?">
+        <input type=text ng-model="answer.baseLocation">
+    </my-question>
+      
+    <my-question q="Are you my brother?">
+        <input type="radio" ng-value=true ng-model="answer.brother" />Yes
+         <input type="radio" ng-value=false ng-model="answer.brother" />No
+    </my-question>
+      
+    <my-question q="Are you my brother?">
+        <button class="btn btn-lg btn-primary" ng-click="">No</button>
+         <button class="btn btn-sx btn-default" ng-click="">Yes</button>
+    </my-question>
+      
+  </body>
+
+</html>
